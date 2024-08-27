@@ -3,9 +3,9 @@ import images from "../../utils/imagesImport";
 
 const CourseExploration = () => {
   return (
-    <div className="flex items-center gap-4 relative w-full px-10 mb-10 md:mb-16 lg:mb-20">
+    <div className="relative w-full px-10 mb-10 md:mb-15 ">
       {/* Left Side: Card */}
-      <div className="absolute lg:bottom-[-10%] lg:left-[5%] md:left-4 ">
+      <div className="absolute bottom-[-110px] lg:bottom-[-134px] lg:left-[5%] md:left-4 ">
         <Card
           title="Course Exploration"
           bgImage={images.CourseExplorationImg}
