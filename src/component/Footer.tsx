@@ -1,6 +1,7 @@
 import React from "react";
 import { footerLink, socialMeida } from "../utils/Data/FooterCustomData";
 import Button from "./Button";
+import { motion } from "framer-motion";
 
 const Footer: React.FC = () => {
   return (
@@ -29,9 +30,13 @@ const Footer: React.FC = () => {
           <div className="text-white p-2">
             <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-2 gap-2">
               {footerLink.map((ele) => (
-                <div key={ele.id} className="mb-1">
+                <motion.div
+                  whileHover={{ scale: 1.1 }}
+                  key={ele.id}
+                  className="mb-1 cursor-pointer"
+                >
                   {ele.title}
-                </div>
+                </motion.div>
               ))}
             </div>
           </div>

@@ -11,8 +11,8 @@ const ProgramSection = () => {
       <div className="lg:space-y-2">
         <div className="flex flex-wrap items-center justify-center gap-2 lg:gap-4 bg-programSection-wave-img bg-no-repeat w-full bg-cover">
           {programCustomData.map((ele) => (
-            <div className="flex justify-end items-end">
-              <Card key={ele.id} bgImage={ele.bgImg} />
+            <div className="flex justify-end items-end" key={ele.id}>
+              <Card bgImage={ele.bgImg} />
             </div>
           ))}
         </div>

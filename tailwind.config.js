@@ -5,6 +5,9 @@ module.exports = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        roboto: ['Roboto', 'sans-serif'], // Add the Google Font here
+      },
       backgroundImage: {
         'banner-img': "url('/src/assets/banner.png')",
         'programSection-wave-img': "url('/src/assets/progamWave.png')",

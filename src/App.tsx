@@ -20,7 +20,7 @@ const App: React.FC = () => {
     };
   }, [isOpen]);
   return (
-    <div className="flex flex-col">
+    <div className="flex flex-col font-roboto">
       <div className="fixed w-full top-0 z-40">
         <Navbar isOpen={isOpen} toggleMenu={toggleMenu} />
       </div>

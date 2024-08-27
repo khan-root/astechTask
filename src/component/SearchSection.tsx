@@ -8,12 +8,13 @@ const SearchSection: React.FC = () => {
   const { handleSetActiveSection, activeSection } = useSearchService();
   return (
     <div className="bg-primary-greenish bg-opacity-50 p-4 md:p-5 rounded-lg md:rounded-full space-y-2 md:space-y-3">
-      <div className="flex flex-wrap items-center gap-2 md:gap-4">
+      <div className="flex flex-wrap items-center gap-3 md:gap-4">
         {searchSection?.map((ele) => (
-          <div
+          <motion.div
             key={ele.id}
             onClick={() => handleSetActiveSection(ele.id)}
             className="relative cursor-pointer flex items-center"
+            whileHover={{ scale: 1.1 }}
           >
             <div className="relative">
               {activeSection === ele.id && (
@@ -27,7 +28,7 @@ const SearchSection: React.FC = () => {
                 {ele.name}
               </span>
             </div>
-          </div>
+          </motion.div>
         ))}
       </div>
       <div className="w-full flex items-center gap-2 bg-primary-green border border-primary-greenish rounded-lg md:rounded-full px-3 py-2 md:px-4 md:py-3">

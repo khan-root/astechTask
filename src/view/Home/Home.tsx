@@ -13,7 +13,7 @@ const Home = () => {
     <>
       <div className="w-full pb-20  bg-primary-green">
         <div className="flex flex-col gap-10 p-2">
-          <div className="flex items-center justify-center">
+          <div className="flex items-center justify-center lg:mb-5">
             <CourseExploration />
           </div>
           <div className="flex flex-wrap items-center justify-center gap-4">
